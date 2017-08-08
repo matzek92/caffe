@@ -1,6 +1,4 @@
-# Caffe Fork Number 11724
-
-# This is Fork Number 1856 of BVLC/caffe Repository. 
+# This is Fork Number 11724 of BVLC/caffe Repository. 
 It contains some adjustments to fit my needs (e.g. Branches for projects that need caffe in some special revision (py-faster-rcnn)).
 
 ## Here the original Readme and License Stuff, please read carefully before cloning or forking from here:
