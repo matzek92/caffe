@@ -1,5 +1,6 @@
 PROJECT := caffe
 
+
 CONFIG_FILE := Makefile.config
 # Explicitly check for the config file, otherwise make -k will proceed anyway.
 ifeq ($(wildcard $(CONFIG_FILE)),)
@@ -533,6 +534,7 @@ runtest: $(TEST_ALL_BIN)
 	$(TEST_ALL_BIN) $(TEST_GPUID) --gtest_shuffle $(TEST_FILTER)
 
 pytest: py
+	protoc --version
 	cd python; python -m unittest discover -s caffe/test
 
 mattest: mat
@@ -653,6 +655,9 @@ clean:
 	@- $(RM) -rf $(DISTRIBUTE_DIR)
 	@- $(RM) $(PY$(PROJECT)_SO)
 	@- $(RM) $(MAT$(PROJECT)_SO)
+
+ficken:
+	@protoc --version
 
 supercleanfiles:
 	$(eval SUPERCLEAN_FILES := $(strip \
