@@ -1,6 +1,8 @@
-# Caffe
+# This is Fork Number 11724 of BVLC/caffe Repository. 
+It contains some adjustments to fit my needs (e.g. Branches for projects that need caffe in some special revision (py-faster-rcnn)).
 
-[![Build Status](https://travis-ci.org/BVLC/caffe.svg?branch=master)](https://travis-ci.org/BVLC/caffe)
+## Here the original Readme and License Stuff, please read carefully before cloning or forking from here:
+
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 
 Caffe is a deep learning framework made with expression, speed, and modularity in mind.
